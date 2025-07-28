@@ -1,0 +1,107 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fffaf0; /* Light background for contrast */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 100%;
+}
+
+/* Section base style */
+.section {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  padding-top: 50px; /* Space for title box */
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Section title styling */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Apple styles */
+.apple {
+  background-color: #ffebee; /* Light red */
+}
+
+.apple .section-title {
+  background-color: #c62828; /* Deep red */
+}
+
+/* Banana styles */
+.banana {
+  background-color: #fffde7; /* Light yellow */
+}
+
+.banana .section-title {
+  background-color: #f9a825; /* Golden yellow */
+}
+
+/* Cherry styles */
+.cherry {
+  background-color: #fce4ec; /* Light pink */
+}
+
+.cherry .section-title {
+  background-color: #ad1457; /* Deep cherry pink */
+}
+
+/* Desktop view: 992px and above */
+@media (min-width: 992px) {
+  .section {
+    float: left;
+    width: 31%;
+    margin: 1%;
+  }
+}
+
+/* Tablet view: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    float: left;
+    width: 48%;
+    margin: 1%;
+  }
+
+  .section:nth-child(3) {
+    width: 98%;
+  }
+}
+
+/* Mobile view: 767px and below */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
